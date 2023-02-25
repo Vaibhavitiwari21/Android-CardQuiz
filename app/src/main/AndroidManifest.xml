@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CardQuiz"
+        tools:targetApi="31">
+        <activity
+            android:name=".PreviousScoreActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".FinalScoreActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".QuestionFive"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".QuestionFour"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".QuestionThree"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".QuestionTwo"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".QuestionOne"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".LoggedIn"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".RegisterForm"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
