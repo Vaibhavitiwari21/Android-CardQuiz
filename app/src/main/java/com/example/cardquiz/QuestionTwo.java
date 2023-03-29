@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 public class QuestionTwo extends AppCompatActivity {
 
@@ -47,12 +46,6 @@ public class QuestionTwo extends AppCompatActivity {
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        // Show a small toast message based on the answer
-                        if (answer.equals("Helium")) {
-                            Toast.makeText(QuestionTwo.this, "Correct!", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(QuestionTwo.this, "Incorrect!", Toast.LENGTH_SHORT).show();
-                        }
                         // Navigate to the next activity
                         Intent answerTwo = new Intent(QuestionTwo.this, QuestionThree.class);
                         answerTwo.putExtra("score", score);
